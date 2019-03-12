@@ -106,6 +106,21 @@ const vision = document.querySelectorAll('.bottom-content p');
 
 vision[2].textContent = siteContent["main-content"]["vision-content"];
 
+const contact = document.querySelector('.contact').children;
+
+contact[0].textContent = siteContent.contact["contact-h4"];
+contact[1].textContent = siteContent.contact.address;
+contact[2].textContent = siteContent.contact.phone;
+contact[3].textContent = siteContent.contact.email;
+
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent.footer.copyright;
+
+
+
+
+
+
 
 
 
