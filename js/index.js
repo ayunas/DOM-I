@@ -44,12 +44,68 @@ let codeImg = document.getElementById('cta-img');
 codeImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 const nav = document.querySelector('nav');
-nav.children[0].textContent = 'Services';
-nav.children[1].textContent = 'Product';
-nav.children[2].textContent = 'Vision';
-nav.children[3].textContent = 'Features';
-nav.children[4].textContent = 'About';
-nav.children[5].textContent = 'Contact';
+nav.children[0].textContent = siteContent.nav["nav-item-1"];
+nav.children[1].textContent = siteContent.nav["nav-item-2"];
+nav.children[2].textContent = siteContent.nav["nav-item-3"];
+nav.children[3].textContent = siteContent.nav["nav-item-4"];
+nav.children[4].textContent = siteContent.nav["nav-item-5"];
+nav.children[5].textContent = siteContent.nav["nav-item-6"];
+
+const cta = document.querySelector('.cta-text h1');
+
+cta.textContent = siteContent.cta.h1;
+//cta.style.fontSize;
+
+const ctaButton = document.querySelector('.cta-text button');
+
+ctaButton.textContent = siteContent.cta.button;
+
+const featuresHeader = document.querySelectorAll('.top-content h4');
+
+featuresHeader[0].textContent = siteContent["main-content"]["features-h4"];
+
+const features = document.querySelectorAll('.top-content p');
+
+features[0].textContent = siteContent["main-content"]["features-content"];
+
+
+
+
+//const featuresHeader = document.querySelectorAll('.top-content h4');
+//
+//featuresHeader[0].textContent = siteContent["main-content"]["features-h4"];
+//
+//const features = document.querySelectorAll('.top-content p');
+//
+//features[0].textContent = siteContent["main-content"]["features-content"];
+//
+//const aboutHead = document.querySelector('.top-content h4');
+//
+////aboutHead[0].textContent = siteContent["main-content"]["about-h4"];
+//
+//const about = document.querySelector('.top-content');
+//
+//about.textContent = siteContent["main-content"]["about-content"];
+
+const midImg = document.querySelector('#middle-img');
+
+midImg.src = siteContent["main-content"]["middle-img-src"];
+
+const services = document.querySelector('.bottom-content').children[0];
+
+services.textContent = siteContent["main-content"]["services-content"];
+
+const product = document.querySelector('.bottom-content').children[1];
+
+product.textContent = siteContent["main-content"]["features-content"];
+
+const vision = document.querySelector('.bottom-content').children[2];
+
+vision.textContent = siteContent["main-content"]["vision-content"];
+
+
+
+
 
 
 
