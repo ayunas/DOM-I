@@ -68,40 +68,55 @@ const features = document.querySelectorAll('.top-content p');
 
 features[0].textContent = siteContent["main-content"]["features-content"];
 
+const aboutHead = document.querySelectorAll('.top-content h4');
 
+aboutHead[1].textContent = siteContent["main-content"]["about-h4"];
 
+const about = document.querySelectorAll('.top-content p');
 
-//const featuresHeader = document.querySelectorAll('.top-content h4');
-//
-//featuresHeader[0].textContent = siteContent["main-content"]["features-h4"];
-//
-//const features = document.querySelectorAll('.top-content p');
-//
-//features[0].textContent = siteContent["main-content"]["features-content"];
-//
-//const aboutHead = document.querySelector('.top-content h4');
-//
-////aboutHead[0].textContent = siteContent["main-content"]["about-h4"];
-//
-//const about = document.querySelector('.top-content');
-//
-//about.textContent = siteContent["main-content"]["about-content"];
+about[1].textContent = siteContent["main-content"]["about-content"];
 
 const midImg = document.querySelector('#middle-img');
 
 midImg.src = siteContent["main-content"]["middle-img-src"];
 
-const services = document.querySelector('.bottom-content').children[0];
 
-services.textContent = siteContent["main-content"]["services-content"];
+const servicesHead = document.querySelectorAll('.bottom-content h4');
 
-const product = document.querySelector('.bottom-content').children[1];
+servicesHead[0].textContent = siteContent["main-content"]["services-h4"];
 
-product.textContent = siteContent["main-content"]["features-content"];
+const services = document.querySelectorAll('.bottom-content p');
 
-const vision = document.querySelector('.bottom-content').children[2];
+services[0].textContent = siteContent["main-content"]["services-content"];
 
-vision.textContent = siteContent["main-content"]["vision-content"];
+const productHead = document.querySelectorAll('.bottom-content h4');
+
+productHead[1].textContent = siteContent["main-content"]["product-h4"];
+
+const product = document.querySelectorAll('.bottom-content p');
+
+product[1].textContent = siteContent["main-content"]["product-content"];
+
+const visionHead = document.querySelectorAll('.bottom-content h4');
+
+visionHead[2].textContent = siteContent["main-content"]["vision-h4"];
+
+
+const vision = document.querySelectorAll('.bottom-content p');
+
+vision[2].textContent = siteContent["main-content"]["vision-content"];
+
+
+
+
+
+//const product = document.querySelector('.bottom-content').children[1];
+//
+//product.textContent = siteContent["main-content"]["features-content"];
+//
+//const vision = document.querySelector('.bottom-content').children[2];
+//
+//vision.textContent = siteContent["main-content"]["vision-content"];
 
 
 
