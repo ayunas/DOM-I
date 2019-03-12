@@ -44,12 +44,20 @@ let codeImg = document.getElementById('cta-img');
 codeImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 const nav = document.querySelector('nav');
-nav.children[0].textContent = siteContent.nav["nav-item-1"];
-nav.children[1].textContent = siteContent.nav["nav-item-2"];
-nav.children[2].textContent = siteContent.nav["nav-item-3"];
-nav.children[3].textContent = siteContent.nav["nav-item-4"];
-nav.children[4].textContent = siteContent.nav["nav-item-5"];
-nav.children[5].textContent = siteContent.nav["nav-item-6"];
+//nav.children[0].textContent = siteContent.nav["nav-item-1"];
+//nav.children[1].textContent = siteContent.nav["nav-item-2"];
+//nav.children[2].textContent = siteContent.nav["nav-item-3"];
+//nav.children[3].textContent = siteContent.nav["nav-item-4"];
+//nav.children[4].textContent = siteContent.nav["nav-item-5"];
+//nav.children[5].textContent = siteContent.nav["nav-item-6"];
+
+//let navchildren = nav.children;
+
+//navchildren.forEach( (a,i) => a.textContent = siteContent.nav["nav-item-" + i]);  why doesn't this forEach function work?  
+
+for (let i = 0; i < nav.children.length; i++) {
+    nav.children[i].textContent = siteContent.nav["nav-item-" + (i+1)];
+}
 
 const cta = document.querySelector('.cta-text h1');
 
